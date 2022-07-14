@@ -20,8 +20,11 @@ SHEET = GSPREAD_CLIENT.open("ci-pp3-sheet")
 
 Q1 = SHEET.worksheet("Q1")
 
-# Function that clears the console windows or linux (reference: https://stackoverflow.com/questions/517970/how-to-clear-the-interpreter-console)
 def cls():
+    """
+    Function that clears the console windows or linux 
+    Reference: https://stackoverflow.com/questions/517970/how-to-clear-the-interpreter-console
+    """
     os.system('cls' if os.name=='nt' else 'clear')
 
 
@@ -53,20 +56,46 @@ def cls():
 # reg_or_access_user()
 
 def printOptions():
+    """
+    Function that prints possible options
+    of questionary: A, B or C
+    """
     print("(A) Never or seldom")
     print("(B) Sometimes")
     print("(C) Always or almost always\n")
 
 def questionaryTotal(choice, puntos):
-    
-    if choice == "A":
+    """
+    Function that take user choice and current points
+    and return the sum of points depends on choice
+    """
+    if choice.upper() == "A":
         puntos = puntos + 1
-    elif choice == "B":
+    elif choice.upper() == "B":
         puntos = puntos + 0.5
     return puntos
 
+def questionaryResult(puntos):
+    """
+    Function that prints the result
+    depending of sum of points
+    """
+    if puntos >= 0 and puntos <= 2:
+        print("Low")
+    elif puntos > 2 and puntos <= 5:
+        print("Medium")
+    elif puntos > 5 and puntos <= 8:
+        print("High")
+    else:
+        print("Extreme")
 
 def inputRandomizeQuestions():
+    """
+    Function that open gspread of questionary
+    random choose 10 questions of file text
+    gather all input question choice
+    and calculate the total and result
+    """
     f = open("q1.txt", "r")
     list = []
     answers = []
@@ -77,12 +106,18 @@ def inputRandomizeQuestions():
     for i in range(10):
         print(list[i])
         printOptions()
-        a = input("Enter your choice: ")
+        while True:
+            a = input("Enter your choice: ")
+            if a.upper() in ["A","B","C"]:
+                break
+            print("Please enter characters A, B or C only")
         puntos = questionaryTotal(a, puntos)
         print("\n")
         answers.append(a)
-        cls()
+        #cls()
+    questionaryResult(puntos)
     print(puntos)
+    print(answers)
 
 
 inputRandomizeQuestions()
