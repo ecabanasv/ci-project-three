@@ -3,9 +3,8 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 
 import random
-from turtle import clear
-import gspread
 import os
+import gspread
 from google.oauth2.service_account import Credentials
 
 SCOPE = [
