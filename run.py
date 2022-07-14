@@ -3,7 +3,9 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 
 import random
+from turtle import clear
 import gspread
+import os
 from google.oauth2.service_account import Credentials
 
 SCOPE = [
@@ -18,6 +20,10 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("ci-pp3-sheet")
 
 Q1 = SHEET.worksheet("Q1")
+
+# Function that clears the console windows or linux (reference: https://stackoverflow.com/questions/517970/how-to-clear-the-interpreter-console)
+def cls():
+    os.system('cls' if os.name=='nt' else 'clear')
 
 
 # def check_user_exist():
@@ -52,11 +58,20 @@ def printOptions():
     print("(B) Sometimes")
     print("(C) Always or almost always\n")
 
+def questionaryTotal(choice, puntos):
+    
+    if choice == "A":
+        puntos = puntos + 1
+    elif choice == "B":
+        puntos = puntos + 0.5
+    return puntos
+
 
 def inputRandomizeQuestions():
     f = open("q1.txt", "r")
     list = []
     answers = []
+    puntos = 0
     for i in f:
         list.append(i)
     random.shuffle(list)
@@ -64,11 +79,11 @@ def inputRandomizeQuestions():
         print(list[i])
         printOptions()
         a = input("Enter your choice: ")
+        puntos = questionaryTotal(a, puntos)
         print("\n")
         answers.append(a)
-
-    for i in range(10):
-        print(answers[i])
+        cls()
+    print(puntos)
 
 
 inputRandomizeQuestions()
