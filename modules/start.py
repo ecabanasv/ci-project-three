@@ -1,4 +1,6 @@
 import random
+import time
+
 from .utils import Utils
 from .functions import Functions
 from colorama import Fore
@@ -18,7 +20,11 @@ SHEET = GSPREAD_CLIENT.open("ci-pp3-sheet")
 
 Q1 = SHEET.worksheet("Q1")
 
+
 class Start:
+    """
+    main(): initiates the questionary
+    """
 
     @staticmethod
     def main():
@@ -28,13 +34,15 @@ class Start:
         gather all input question choice
         and calculate the total and result
         """
-        f = open("q1.txt", "r")
-        list_questions = []
         user_answers = []
+        list_questions = []
         sum_points = 0
-        for i in f:
-            list_questions.append(i)
-        random.shuffle(list_questions)
+        Utils.cls()
+        Functions.printIntro()
+        time.sleep(5)
+        Utils.cls()
+        list_questions = Functions.shuffle_questions()
+
         for i in range(10):
             print(Fore.CYAN + list_questions[i])
             Functions.printOptions()
@@ -47,8 +55,11 @@ class Start:
             print("\n")
             user_answers.append(user_input.upper())
             Utils.cls()
+        print(sum_points)
         user_answers.append(sum_points)
         Functions.questionaryResult(sum_points)
-        print(sum_points)
-        print(user_answers)
         Q1.append_row(user_answers)
+        values_list = Q1.col_values(11, value_render_option="UNFORMATTED_VALUE")
+        values_list.remove('result')
+        print("There were", len(values_list), "participants in total.")
+        print("Average of all participants is", round(sum(values_list) / len(values_list), 2))
