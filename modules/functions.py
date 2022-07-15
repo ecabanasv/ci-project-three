@@ -1,4 +1,21 @@
+import random
+
+
 class Functions:
+    """
+    Contains main functions used in start.py
+    """
+
+    @staticmethod
+    def printIntro():
+        """
+        Function that prints introduction text
+        """
+        print(
+            "Are you a procrastinator? The following questionnaire",
+            " will let you know if you are a born procrastinator.",
+        )
+
     @staticmethod
     def printOptions():
         """
@@ -35,3 +52,12 @@ class Functions:
             print("High: Don't do today what you can do tomorrow!")
         else:
             print("Extreme: You even procrastinate this questionary for hours!")
+
+    @staticmethod
+    def shuffle_questions():
+        f = open("q1.txt", "r")
+        list_questions = []
+        for i in f:
+            list_questions.append(i)
+        random.shuffle(list_questions)
+        return list_questions
