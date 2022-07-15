@@ -3,7 +3,7 @@ import os
 
 class Utils:
     """
-    Useful functions
+    Library of useful functions
     """
 
     @staticmethod
