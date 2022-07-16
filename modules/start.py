@@ -44,7 +44,7 @@ class Start:
         list_questions = Functions.shuffle_questions()
 
         for i in range(10):
-            print(Fore.CYAN + list_questions[i])
+            print(Fore.YELLOW + list_questions[i])
             Functions.printOptions()
             while True:
                 user_input = input(Fore.WHITE + "Enter your choice: ")
