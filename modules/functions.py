@@ -32,10 +32,10 @@ class Functions:
         Function that take user choice and current points
         and return the sum of points depends on choice
         """
-        if choice.upper() == "A":
-            points = points + 1
-        elif choice.upper() == "B":
+        if choice.upper() == "B":
             points = points + 0.5
+        elif choice.upper() == "C":
+            points = points + 1
         return points
 
     @staticmethod
