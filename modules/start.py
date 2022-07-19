@@ -38,7 +38,7 @@ class Start:
         sum_points = 0
         Utils.cls()
         Functions.printIntro()
-        time.sleep(5)
+        time.sleep(10)
         Utils.cls()
         list_questions = Functions.shuffle_questions()
 
@@ -59,6 +59,8 @@ class Start:
         Q1.append_row(user_answers)
         values_list = Q1.col_values(11, value_render_option="UNFORMATTED_VALUE")
         values_list.remove("result")
-        print("\nThere are " + str(len(values_list)) + " participants in total",
-        "with an average of " + str(round(sum(values_list) / len(values_list), 2)) + " points.\n"
-        )
+        if len(values_list) > 1:
+            print("\nTOTAL:\n")
+            print("  There are " + str(len(values_list)) + " participants in total",
+            "with an average of " + str(round(sum(values_list)/len(values_list), 2)) + " points.\n"
+            )
