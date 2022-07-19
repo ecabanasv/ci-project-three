@@ -16,11 +16,11 @@ class Functions:
         )
         print(
             "Please, take your time to answer the questions.",
-            "There will be three options (A, B and C)\n"
+            "Choose options A, B or C.\n"
         )
         print(
             "At the end of questionary we will show the results,",
-            "and the total results (if available).\n"
+            "and the total results.\n"
         )
 
     @staticmethod

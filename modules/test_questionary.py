@@ -14,9 +14,9 @@ def test_print_intro():
         "Are you a procrastinator? The following questionnaire",
         " will let you know if you are a born procrastinator.\n",
         "Please, take your time to answer the questions.",
-        "There will be three options (A, B and C)\n"
+        "Choose options A, B or C.\n"
         "At the end of questionary we will show the results,",
-        "and the total results (if available).\n",
+        "and the total results.\n",
     )
 
 
@@ -39,6 +39,7 @@ def test_print_options():
 def test_shuffle_questions():
     """
     Test shuffle questions
+    Expected results: 30 (total number of questions in the file)
     """
     list_questions = Functions.shuffle_questions()
     assert len(list_questions) == 30
