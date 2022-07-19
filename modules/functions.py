@@ -1,13 +1,12 @@
 import random
 
-
 class Functions:
     """
     Contains main functions used in start.py
     """
 
     @staticmethod
-    def printIntro():
+    def print_intro():
         """
         Function that prints introduction text
         """
@@ -25,7 +24,7 @@ class Functions:
         )
 
     @staticmethod
-    def printOptions():
+    def print_options():
         """
         Function that prints possible options
         of questionary: A, B or C
@@ -35,7 +34,7 @@ class Functions:
         print("(C) Always or almost always\n")
 
     @staticmethod
-    def questionaryTotal(choice, points):
+    def questionary_total(choice, points):
         """
         Function that take user choice and current points
         and return the sum of points depends on choice
@@ -47,7 +46,7 @@ class Functions:
         return points
 
     @staticmethod
-    def questionaryResult(points):
+    def questionary_result(points):
         """
         Function that prints the result
         depending of sum of points
@@ -68,7 +67,12 @@ class Functions:
 
     @staticmethod
     def shuffle_questions():
-        f = open("q1.txt", "r")
+        """
+        Open file q1.txt 
+        Add questions to list_questions
+        return Shuffle questions
+        """
+        f = open("q1.txt")
         list_questions = []
         for i in f:
             list_questions.append(i)

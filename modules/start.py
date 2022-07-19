@@ -37,25 +37,25 @@ class Start:
         list_questions = []
         sum_points = 0
         Utils.cls()
-        Functions.printIntro()
+        Functions.print_intro()
         time.sleep(10)
         Utils.cls()
         list_questions = Functions.shuffle_questions()
 
         for i in range(10):
             print(Fore.YELLOW + list_questions[i])
-            Functions.printOptions()
+            Functions.print_options()
             while True:
                 user_input = input(Fore.WHITE + "Enter your choice: ")
                 if user_input.upper() in ["A", "B", "C"]:
                     break
                 print(Fore.RED + "Please enter characters A, B or C only")
-            sum_points = Functions.questionaryTotal(user_input, sum_points)
+            sum_points = Functions.questionary_total(user_input, sum_points)
             print("\n")
             user_answers.append(user_input.upper())
             Utils.cls()
         user_answers.append(sum_points)
-        Functions.questionaryResult(sum_points)
+        Functions.questionary_result(sum_points)
         Q1.append_row(user_answers)
         values_list = Q1.col_values(11, value_render_option="UNFORMATTED_VALUE")
         values_list.remove("result")
