@@ -44,14 +44,19 @@ class Functions:
         Function that prints the result
         depending of sum of points
         """
+        print("################## RESULTS ########################\\n")
         if points >= 0 and points <= 2:
-            print("Result:", points, "Low: You are the new Terminator model Roomba TX6000")
+            print("(Low) You scored " + str(points) + " points.",
+            "You are the new Terminator model Roomba TX6000")
         elif points > 2 and points <= 5:
-            print("Result:", points, "Medium: So, you are 'normal'")
+            print("(Medium) You scored " + str(points) + " points.",
+            "We suppose that you are 'normal'")
         elif points > 5 and points <= 8:
-            print("High: Don't do today what you can do tomorrow!")
+            print("(High) You scored " + str(points) + " points.",
+            "Don't do today what you can do tomorrow!")
         else:
-            print("Result:", points, "Extreme: You even procrastinate this questionary for hours!")
+            print("(Extreme) You scored " + str(points) + " points.",
+            "You even procrastinate this questionary for hours!")
 
     @staticmethod
     def shuffle_questions():
