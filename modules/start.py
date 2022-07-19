@@ -1,4 +1,3 @@
-import random
 import time
 
 from .utils import Utils
@@ -55,7 +54,6 @@ class Start:
             print("\n")
             user_answers.append(user_input.upper())
             Utils.cls()
-        print(sum_points)
         user_answers.append(sum_points)
         Functions.questionaryResult(sum_points)
         Q1.append_row(user_answers)
