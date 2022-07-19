@@ -61,8 +61,8 @@ class Start:
         Q1.append_row(user_answers)
         values_list = Q1.col_values(11, value_render_option="UNFORMATTED_VALUE")
         values_list.remove("result")
-        print("There were", len(values_list), "participants in total.")
+        print("\nThere were", len(values_list), "participants in total.")
         print(
-            "Average of all participants is",
+            "\nAverage of all participants is",
             round(sum(values_list) / len(values_list), 2),
         )
