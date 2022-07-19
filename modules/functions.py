@@ -44,7 +44,7 @@ class Functions:
         Function that prints the result
         depending of sum of points
         """
-        print("################## RESULTS ########################\\n")
+        print("################## RESULTS ########################\n")
         if points >= 0 and points <= 2:
             print("(Low) You scored " + str(points) + " points.",
             "You are the new Terminator model Roomba TX6000")
