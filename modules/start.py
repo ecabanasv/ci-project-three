@@ -60,7 +60,7 @@ class Start:
         values_list = Q1.col_values(11, value_render_option="UNFORMATTED_VALUE")
         values_list.remove("result")
         if len(values_list) > 1:
-            print("\nTOTAL:\n")
-            print("  There are " + str(len(values_list)) + " participants in total",
+            print(Fore.MAGENTA + "\nTOTAL:\n")
+            print(Fore.WHITE + "  There are " + str(len(values_list)) + " participants in total",
             "with an average of " + str(round(sum(values_list)/len(values_list), 2)) + " points.\n"
             )

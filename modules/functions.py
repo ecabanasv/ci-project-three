@@ -1,4 +1,5 @@
 import random
+from colorama import Fore
 
 class Functions:
     """
@@ -10,15 +11,15 @@ class Functions:
         """
         Function that prints introduction text
         """
-        print(
+        print(Fore.GREEN +
             "Are you a procrastinator? The following questionnaire",
             " will let you know if you are a born procrastinator.\n",
         )
-        print(
+        print(Fore.GREEN +
             "Please, take your time to answer the questions.",
             "Choose options A, B or C.\n"
         )
-        print(
+        print(Fore.GREEN +
             "At the end of questionary we will show the results,",
             "and the total results.\n"
         )
@@ -51,18 +52,18 @@ class Functions:
         Function that prints the result
         depending of sum of points
         """
-        print("YOUR RESULTS:\n")
+        print(Fore.MAGENTA + "YOUR RESULTS:\n")
         if points >= 0 and points <= 2:
-            print("  (Low) You scored " + str(points) + " points.",
+            print(Fore.WHITE + "  (Low) You scored " + str(points) + " points.",
             "You are the new Terminator model Roomba TX6000")
         elif points > 2 and points <= 5:
-            print("  (Medium) You scored " + str(points) + " points.",
+            print(Fore.WHITE + "  (Medium) You scored " + str(points) + " points.",
             "We suppose that you are 'normal'")
         elif points > 5 and points <= 8:
-            print("  (High) You scored " + str(points) + " points.",
+            print(Fore.WHITE + "  (High) You scored " + str(points) + " points.",
             "Don't do today what you can do tomorrow!")
         else:
-            print("  (Extreme) You scored " + str(points) + " points.",
+            print(Fore.WHITE + "  (Extreme) You scored " + str(points) + " points.",
             "You even procrastinate this questionary for hours!")
 
     @staticmethod
