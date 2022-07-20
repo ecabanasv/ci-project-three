@@ -1,3 +1,6 @@
+"""
+import library random, gspread, colorama and google credentials
+"""
 import random
 import gspread
 from google.oauth2.service_account import Credentials
@@ -143,9 +146,9 @@ class Functions:
         Add questions to list_questions
         return Shuffle questions
         """
-        f = open("q1.txt")
+        questions_file = open("q1.txt", encoding="utf8")
         list_questions = []
-        for i in f:
+        for i in questions_file:
             list_questions.append(i)
         random.shuffle(list_questions)
         return list_questions

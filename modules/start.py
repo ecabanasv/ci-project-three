@@ -1,3 +1,6 @@
+"""
+import library time
+"""
 import time
 
 from .utils import Utils
