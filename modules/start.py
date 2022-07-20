@@ -2,6 +2,7 @@
 import library time, functions and utils
 """
 import time
+
 from .utils import Utils
 from .functions import Functions
 
@@ -31,7 +32,7 @@ class Start:
         Functions.print_intro()
         time.sleep(10)
         Utils.cls()
-        Functions.run_questionary(
+        self.sum_points = Functions.run_questionary(
             self.list_questions, self.user_answers, self.sum_points
         )
         Functions.print_user_result(self.sum_points)

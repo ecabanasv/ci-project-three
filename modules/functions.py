@@ -73,6 +73,7 @@ class Functions:
             Utils.cls()
         row.append(points)
         Functions.gspread_add_row_questionary(row)
+        return points
 
     @staticmethod
     def print_options():
