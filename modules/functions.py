@@ -3,8 +3,11 @@ import library random, gspread, colorama and google credentials
 """
 import random
 import gspread
+
 from google.oauth2.service_account import Credentials
 from colorama import Fore
+from .utils import Utils
+
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -67,6 +70,7 @@ class Functions:
             points = Functions.questionary_total(user_input, points)
             print("\n")
             row.append(user_input.upper())
+            Utils.cls()
         row.append(points)
         Functions.gspread_add_row_questionary(row)
 

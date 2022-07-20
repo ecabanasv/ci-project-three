@@ -1,8 +1,7 @@
 """
 import functions
 """
-
-from functions import Functions
+from modules.functions import Functions
 
 # test print intro
 
