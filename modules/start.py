@@ -1,8 +1,7 @@
 """
-import library time
+import library time, functions and utils
 """
 import time
-
 from .utils import Utils
 from .functions import Functions
 
