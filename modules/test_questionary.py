@@ -83,7 +83,7 @@ def test_questionary_result_low():
     Points: 0
     Expected Low result
     """
-    result = Functions.questionary_result(0)
+    result = Functions.print_user_result(0)
     assert result == print(
         "YOUR RESULTS:\n (Low) You scored " + str(0) + "",
         "points. You are the new Terminator model Roomba TX6000",
@@ -95,7 +95,7 @@ def test_questionary_result_medium():
     Points: 3
     Expected Medium result
     """
-    result = Functions.questionary_result(3)
+    result = Functions.print_user_result(3)
     assert result == print(
         "YOUR RESULTS:\n (Medium) You scored " + str(3) + "",
         " points. We suppose that you are 'normal'",
@@ -107,7 +107,7 @@ def test_questionary_result_high():
     Points: 6
     Expected High result
     """
-    result = Functions.questionary_result(6)
+    result = Functions.print_user_result(6)
     assert result == print(
         "YOUR RESULTS:\n (High) You scored " + str(6) + "",
         " points. Don't do today what you can do tomorrow!",
@@ -119,7 +119,7 @@ def test_questionary_result_extreme():
     Points: 9
     Expected Extreme result
     """
-    result = Functions.questionary_result(9)
+    result = Functions.print_user_result(9)
     assert result == print(
         "YOUR RESULTS:\n (Extreme) You scored " + str(9) + "",
         " points. You even procrastinate this questionary for hours!",

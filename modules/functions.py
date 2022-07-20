@@ -1,7 +1,6 @@
 import random
 import gspread
 from google.oauth2.service_account import Credentials
-from .utils import Utils
 from colorama import Fore
 
 SCOPE = [
@@ -65,7 +64,6 @@ class Functions:
             points = Functions.questionary_total(user_input, points)
             print("\n")
             row.append(user_input.upper())
-            Utils.cls()
         row.append(points)
         Functions.gspread_add_row_questionary(row)
 
