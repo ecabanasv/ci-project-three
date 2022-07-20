@@ -13,11 +13,14 @@ class Start:
     """
 
     # default constructor
+
+
     def __init__(self):
         self.sum_points = 0
         self.user_answers = []
         self.list_questions = Functions.shuffle_questions()
         Utils.cls()
+
 
     def main(self):
         """
