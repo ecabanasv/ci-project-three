@@ -10,11 +10,8 @@ class Utils:
     """
 
     @staticmethod
-
-
     def cls():
         """
         Function that clears the console windows or linux
         """
         os.system("cls" if os.name == "nt" else "clear")
-        
