@@ -108,6 +108,7 @@ At the end of the questionnaire, it will show the result of the participant, and
   ### 2.5. Google Sheet (5)
 
    - Google Sheet document that stores the user's responses and their total result.
+   - Used [Google Cloud Console](https://console.cloud.google.com) for connect to the APIs of Google Drive and Google Sheet
 
  ![google_sheet](readme/google_sheet.png)
 
@@ -130,7 +131,8 @@ At the end of the questionnaire, it will show the result of the participant, and
 # 3. Technologies Used
   [Go to the top](#table-of-contents)
 
-* [python](https://www.python.org/) is the programming language used for develop the questionary.
+* [Python](https://www.python.org/) is the programming language used for develop the questionary.
+* [Google Cloud Console](https://console.cloud.google.com) is used for connect to the APIs of Google Drive and Google Sheet.
 * [Balsamiq](https://balsamiq.com/) used for creating wireframes in Desktop and Mobile versions.
 * [Chrome](https://www.google.com/intl/en_uk/chrome/) used for debugging and test the website.
 * [Firefox Developer Edition](https://www.mozilla.org/es-ES/firefox/developer/) used for debugging and testing the website.
