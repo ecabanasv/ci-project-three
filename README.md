@@ -163,13 +163,23 @@ The built-in tools of the Google Chrome and Firefox Developer Edition browsers h
 
 To load the pytest tests you must run the command "pytest .\test_questionary.py" from the root directory.
 
- ![py_test](readme/pytest.png)
+ ![py_test](readme/test.png)
 
 ### 4.1.3 PIP3 Validator
 
 For the validation of the python code, the official tool has been used [pythonchecker](https://www.pythonchecker.com/).
 
- ![pip3_validator](readme/pip3validator.png)
+run.py
+![run.py](readme/pycheck1.png)
+
+modules/start.py
+![modules/start.py](readme/pycheck1.png)
+
+modules/functionspy
+![modules/functionspy](readme/pycheck1.png)
+
+modules/utils.py
+![modules/utils.py](readme/pycheck1.png)
 
 ## 4.2 Manual Testing
 
