@@ -141,9 +141,9 @@ At the end of the questionnaire, it will show the result of the participant, and
 * [Github](https://github.com/) is used to create and update the online repository of the project.
 * [Gitpod](https://www.gitpod.io/) used for coding the project online.
 * [Ami](http://ami.responsivedesign.is/#) used for generate the different responsive versions of the project.
-* [Heroku] is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud, and was used to deploy the live project.
-* [Google_Sheet] used to securely store user data entered in the project.
-* [PEP8] is used to validate Python code.
+* [Heroku](https://www.heroku.com/) is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud, and was used to deploy the live project.
+* [Google_Sheet](https://www.google.com/intl/es/sheets/about/) used to securely store user data entered in the project.
+* [PEP8](https://www.pythonchecker.com/) is used to validate Python code.
 
 ## 3.1 Python libraries
 [Go to the top](#table-of-contents)
@@ -168,13 +168,13 @@ The built-in tools of the Google Chrome and Firefox Developer Edition browsers h
 
 To load the pytest tests you must run the command "pytest .\test_questionary.py" from the root directory.
 
- ![py_test](readme/11.png)
+ ![py_test](readme/pytest.png)
 
 ### 4.1.3 PIP3 Validator
 
 For the validation of the python code, the official tool has been used [pythonchecker](https://www.pythonchecker.com/).
 
- ![pip3_validator](readme/12.png)
+ ![pip3_validator](readme/pip3validator.png)
 
 ## 4.2 Manual Testing
 
