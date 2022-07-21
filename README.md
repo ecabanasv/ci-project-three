@@ -130,6 +130,7 @@ At the end of the questionnaire, it will show the result of the participant, and
 # 3. Technologies Used
   [Go to the top](#table-of-contents)
 
+* [python](https://www.python.org/) is the programming language used for develop the questionary.
 * [Balsamiq](https://balsamiq.com/) used for creating wireframes in Desktop and Mobile versions.
 * [Chrome](https://www.google.com/intl/en_uk/chrome/) used for debugging and test the website.
 * [Firefox Developer Edition](https://www.mozilla.org/es-ES/firefox/developer/) used for debugging and testing the website.
@@ -173,13 +174,13 @@ run.py
 ![run.py](readme/pycheck1.png)
 
 modules/start.py
-![modules/start.py](readme/pycheck1.png)
+![modules/start.py](readme/pycheck2.png)
 
 modules/functionspy
-![modules/functionspy](readme/pycheck1.png)
+![modules/functionspy](readme/pycheck3.png)
 
 modules/utils.py
-![modules/utils.py](readme/pycheck1.png)
+![modules/utils.py](readme/pycheck4.png)
 
 ## 4.2 Manual Testing
 
