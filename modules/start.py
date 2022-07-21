@@ -13,13 +13,11 @@ class Start:
 
     # default constructor
 
-
     def __init__(self):
         self.sum_points = 0
         self.user_answers = []
         self.list_questions = Functions.shuffle_questions()
         Utils.cls()
-
 
     def main(self):
         """
@@ -29,6 +27,7 @@ class Start:
         and calculate the total and result
         """
         Functions.print_intro()
+        Functions.press_enter_continue()
         Utils.cls()
         self.sum_points = Functions.run_questionary(
             self.list_questions, self.user_answers, self.sum_points

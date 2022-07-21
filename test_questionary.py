@@ -21,9 +21,6 @@ def test_print_intro():
     )
 
 
-# test print options
-
-
 def test_print_options():
     """
     Test print options

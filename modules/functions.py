@@ -46,6 +46,11 @@ class Functions:
             "and the total results.\n",
         )
 
+    @staticmethod
+    def press_enter_continue():
+        """
+        Function that prints Enter to continue after intro
+        """
         input(Fore.WHITE + "Press Enter to continue...")
 
     @staticmethod
