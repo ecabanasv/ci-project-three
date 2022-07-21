@@ -91,13 +91,13 @@ At the end of the questionnaire, it will show the result of the participant, and
 
    - The file contains 30 questions of the questionnaire.
 
- ![questions](readme/questions.png)
+ ![questions](readme/file.png)
 
   ### 2.3. Questionary (3)
 
    - The questionnaire loads a question from the file randomly.
 
- ![questionary](readme/questionary.png)
+ ![questionary](readme/question.png)
 
   ### 2.4. User options (4)
 
@@ -111,20 +111,15 @@ At the end of the questionnaire, it will show the result of the participant, and
 
  ![google_sheet](readme/google_sheet.png)
 
-  ### 2.6. User results (6)
+  ### 2.6. User and total results (6)
 
-    - Final screen that shows the result of the user's points.
-    - Results are calculated from 0-2: Low, 2-5: Medium, 5-8: High and 8-10: Extreme.
-
- ![user_results](readme/user_results.png)
-
-  ### 2.7. Total results (7)
-
+   - Final screen that shows the result of the user's points.
+   - Results are calculated from 0-2: Low, 2-5: Medium, 5-8: High and 8-10: Extreme.
    - If there is more than one user in the Google Sheet document, it will show the number of participants and the total average.
 
- ![total_results](readme/total_results.png)
+ ![user_results](readme/result.png)
 
-  ### 2.8. Restart questionary (8)
+  ### 2.7. Restart questionary (7)
 
   - Button to restart the questionnary
 
@@ -148,9 +143,9 @@ At the end of the questionnaire, it will show the result of the participant, and
 ## 3.1 Python libraries
 [Go to the top](#table-of-contents)
 
-* [colorama] used for text coloring
-* [gspread] used for save questionary data and results
-* [pytest] is used for test python code
+* [colorama](https://pypi.org/project/colorama/) is used for text coloring
+* [gspread](https://docs.gspread.org/en/latest/) is used for save questionary data and results
+* [pytest](https://docs.pytest.org/en/7.1.x/) is used for test python code
 
   <a name="testing-phase"></a>
 # 4. Testing
