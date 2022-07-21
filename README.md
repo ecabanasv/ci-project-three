@@ -72,7 +72,7 @@ At the end of the questionnaire, it will show the result of the participant, and
   
 <a name="index-page"></a>
 ### Diagram 
-![Wireframe](readme/diagram.png)
+![Diagram](readme/diagram.png)
 
 ### Wireframe
 ![Wireframe](readme/wireframe.png)
