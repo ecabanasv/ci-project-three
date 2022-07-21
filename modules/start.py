@@ -29,7 +29,6 @@ class Start:
         and calculate the total and result
         """
         Functions.print_intro()
-        input("Press Enter to continue...")
         Utils.cls()
         self.sum_points = Functions.run_questionary(
             self.list_questions, self.user_answers, self.sum_points

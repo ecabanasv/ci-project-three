@@ -46,6 +46,8 @@ class Functions:
             "and the total results.\n",
         )
 
+        input(Fore.WHITE + "Press Enter to continue...")
+
     @staticmethod
     def gspread_add_row_questionary(row):
         """
