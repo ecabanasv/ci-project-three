@@ -170,7 +170,7 @@ To load the pytest tests you must run the command "pytest .\test_questionary.py"
 
 ### 4.1.3 PIP3 Validator
 
-For the validation of the python code, the official tool has been used [pythonchecker](https://www.pythonchecker.com/).
+For the validation of the python code, the official tool has been used [PEP8](http://pep8online.com).
 
 run.py
 ![run.py](readme/pycheck1.png)
