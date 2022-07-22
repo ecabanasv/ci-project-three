@@ -178,7 +178,7 @@ run.py
 modules/start.py
 ![modules/start.py](readme/pycheck2.png)
 
-modules/functionspy (Followed the guidelines to fix W503 but doesn't seems to work)
+modules/functionspy 
 ![modules/functionspy](readme/pycheck3.png)
 
 modules/utils.py

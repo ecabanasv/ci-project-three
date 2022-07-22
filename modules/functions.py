@@ -149,13 +149,13 @@ class Functions:
         if len(val_list) > 1:
             print(Fore.MAGENTA + "\nTOTAL:\n")
             print(
-                Fore.WHITE
-                + "  There are "
-                + str(len(val_list))
-                + " participants in total",
-                "with an average of "
-                + str(round(sum(val_list) / len(val_list), 2))
-                + " points.\n",
+                Fore.WHITE +
+                "  There are " +
+                str(len(val_list)) +
+                " participants in total",
+                "with an average of " +
+                str(round(sum(val_list) / len(val_list), 2)) +
+                " points.\n",
             )
 
     @staticmethod
