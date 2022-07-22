@@ -113,22 +113,26 @@ class Functions:
         print(Fore.MAGENTA + "YOUR RESULTS:\n")
         if points >= 0 and points <= 2:
             print(
-                Fore.WHITE + "  (Low) You scored " + str(points) + " points.",
+                Fore.WHITE + "  (Low) You scored ",
+                "" + str(points) + " points.",
                 "You are the new Terminator model Roomba TX6000",
             )
         elif points > 2 and points <= 5:
             print(
-                Fore.WHITE + "  (Medium) You scored " + str(points) + " points.",
+                Fore.WHITE + "  (Medium) You scored ",
+                "" + str(points) + " points.",
                 "We suppose that you are 'normal'",
             )
         elif points > 5 and points <= 8:
             print(
-                Fore.WHITE + "  (High) You scored " + str(points) + " points.",
+                Fore.WHITE + "  (High) You scored ",
+                "" + str(points) + " points.",
                 "Don't do today what you can do tomorrow!",
             )
         else:
             print(
-                Fore.WHITE + "  (Extreme) You scored " + str(points) + " points.",
+                Fore.WHITE + "  (Extreme) You scored ",
+                "" + str(points) + " points.",
                 "You even procrastinate this questionary for hours!",
             )
 
@@ -137,17 +141,17 @@ class Functions:
         """
         Functions that print results on screen after finish Q1
         """
-        values_list = Q1.col_values(11, value_render_option="UNFORMATTED_VALUE")
-        values_list.remove("result")
-        if len(values_list) > 1:
+        val_list = Q1.col_values(11, value_render_option="UNFORMATTED_VALUE")
+        val_list.remove("result")
+        if len(val_list) > 1:
             print(Fore.MAGENTA + "\nTOTAL:\n")
             print(
                 Fore.WHITE
                 + "  There are "
-                + str(len(values_list))
+                + str(len(val_list))
                 + " participants in total",
                 "with an average of "
-                + str(round(sum(values_list) / len(values_list), 2))
+                + str(round(sum(val_list) / len(val_list), 2))
                 + " points.\n",
             )
 

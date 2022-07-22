@@ -293,7 +293,7 @@ The project was deployed to Heroku using the following steps...
 1. Your app should now be created so from the menu towards the top of the page
    click 'Settings'
 1. Click 'Reveal Config Vars' in the Config vars section and enter the key as
-   `PORT` and the value as `8000`. Click the Add button.
+   `CREDS` and the value of creds.json. Click the Add button.
 1. Under the 'Buildpacks' section click 'Add buildpack'.
     1. Select 'Python' and then click the 'Save changes' button.
     1. Click 'Add buildpack' again, select 'nodejs' and click the 'Save changes'
