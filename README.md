@@ -141,7 +141,7 @@ At the end of the questionnaire, it will show the result of the participant, and
 * [Ami](http://ami.responsivedesign.is/#) used for generate the different responsive versions of the project.
 * [Heroku](https://www.heroku.com/) is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud, and was used to deploy the live project.
 * [Google_Sheet](https://www.google.com/intl/es/sheets/about/) used to securely store user data entered in the project.
-* [PEP8](https://www.pythonchecker.com/) is used to validate Python code.
+* [PEP8](http://pep8online.com) is used to validate Python code.
 
 ## 3.1 Python libraries
 [Go to the top](#table-of-contents)
