@@ -34,11 +34,13 @@ class Functions:
         Function that prints introduction text
         """
         print(
-            Fore.GREEN + "Are you a procrastinator? The following questionnaire",
+            Fore.GREEN + "Are you a procrastinator?",
+            " The following questionnaire",
             " will let you know if you are a born procrastinator.\n",
         )
         print(
-            Fore.GREEN + "Please, take your time to answer the questions.",
+            Fore.GREEN + "Please, take your time",
+            " to answer the questions.",
             "Choose options A, B or C.\n",
         )
         print(
@@ -64,7 +66,8 @@ class Functions:
     def run_questionary(questions, row, points):
         """
         Function that run the questionary (10 questions)
-        After calculate questionary points and call function to add to gspread Q1
+        After calculate questionary points and
+        call function to add to gspread Q1
         """
         for i in range(10):
             print(Fore.YELLOW + questions[i])
